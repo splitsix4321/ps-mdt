@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 :root {
     --color-1: #1E3955;
     --color-2: #213F5F;
@@ -29,14 +28,14 @@ textarea {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.dashboard-page-container  {
-    background-color: var(--color-9);
+.dashboard-page-container {
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -49,9 +48,9 @@ input::-webkit-inner-spin-button {
 }
 
 .profile-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -60,9 +59,9 @@ input::-webkit-inner-spin-button {
 }
 
 .incidents-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -71,9 +70,9 @@ input::-webkit-inner-spin-button {
 }
 
 .bolos-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -82,9 +81,9 @@ input::-webkit-inner-spin-button {
 }
 
 .reports-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -93,9 +92,9 @@ input::-webkit-inner-spin-button {
 }
 
 .penalcode-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -104,9 +103,9 @@ input::-webkit-inner-spin-button {
 }
 
 .dmv-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -114,10 +113,10 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
-.stafflogs-page-container  {
-    background-color: var(--color-9);
+.stafflogs-page-container {
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -127,9 +126,9 @@ input::-webkit-inner-spin-button {
 }
 
 .container-load {
-    background-color: var(--color-9);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -139,8 +138,8 @@ input::-webkit-inner-spin-button {
 
 .header {
     height: 7vh;
-    background-color: var(--color-1);
-    border: 5px solid #393B39;
+    background-color: #1a6aaf;
+    border: 5px solid #393b3900;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     width: 96.5%;
@@ -160,7 +159,7 @@ input::-webkit-inner-spin-button {
 }
 
 .header-middle {
-    background-color: var(--color-2);
+    background-color: #ffffff;
     border-radius: 15px;
     width: fit-content;
     height: fit-content;
@@ -170,7 +169,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: #1a6aaf;
     margin: auto;
     font-size: 20px;
 }
@@ -185,7 +184,7 @@ input::-webkit-inner-spin-button {
 }
 
 .main-container {
-    border-top: 5px solid var(--color-3);
+    border-top: 5px solid #ff000000;
     width: 100%;
     height: 79.5%;
     position: absolute;
@@ -194,10 +193,11 @@ input::-webkit-inner-spin-button {
 }
 
 .nav-menu {
-    background-color: var(--color-1);
-    border-right: 5px solid var(--color-3);
+    background-color: #cecece;
+    border-radius: 10px;
+    border-right: 5px solid #1a69af00;
     min-width: 22.5vh;
-    height: 100%;
+    max-height: 55%;
     display: flex;
     flex-direction: column;
     user-select: none;
@@ -205,25 +205,28 @@ input::-webkit-inner-spin-button {
 }
 
 .nav-item {
-    background-color: var(--color-4);
+    background-color: #1a6aaf;
     margin-top: 10px;
     padding: 10px;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     color: white;
     font-size: 18px;
     font-weight: bolder;
 }
 
 .nav-item:hover {
-    background-color: var(--color-3);
+    background-color: #134979;
 }
 
 .active-nav {
-    background-color: var(--color-3);
+    background-color: #134979;
 }
 
 .warrants-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -233,8 +236,9 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -264,7 +268,8 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-item {
-    background-color: var(--color-5);
+    background-color: #0e406b;
+    border-radius: 10px;
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
@@ -274,7 +279,7 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-item:hover {
-    background-color: var(--color-3);
+    background-color: #215888;
 }
 
 .warrant-image {
@@ -286,14 +291,14 @@ input::-webkit-inner-spin-button {
 }
 
 .warrant-title {
-    font-size: 16px;
-    font-weight: lighter;
-    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #ffffff;
     margin-top: 5px;
 }
 
 .warrant-item-info {
-    color: #cccccc;
+    color: #ffffff;
     font-size: 12px;
 }
 
@@ -302,25 +307,29 @@ input::-webkit-inner-spin-button {
     margin-top: 1vh;
     margin-bottom: 0.75vh;
     width: 100%;
+    font-weight: bolder;
 }
 
 .warrant-id {
-    color: white;
+    color: #ffffff;
     font-size: 12px;
+    font-weight: bolder;
 }
 
 .warrant-expiry-date {
-    color: white;
+    color: #ffffff;
     font-size: 12px;
     margin: auto;
     margin-right: 10px;
+    font-weight: bolder;
 }
 
 .quotes-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     width: 50vh;
-    height: 75px;
+    height: 120px;
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
@@ -330,11 +339,12 @@ input::-webkit-inner-spin-button {
 
 .quote-title {
     font-size: 14px;
-    background-color: var(--color-4);
+    background-color: #ffffff;
+    border-radius: 15px;
     padding: 5px;
     margin: 10px 0px 10px 10px;
     text-align: center;
-    color: white;
+    color: #1a6aaf;
     font-weight: bolder;
     width: 85px;
     /* height: 30px; */
@@ -346,7 +356,7 @@ input::-webkit-inner-spin-button {
     margin-left: 10px;
     /* margin-bottom: 25px; */
     width: 100%;
-    background-color: var(--color-5);
+    background-color: #1a6aaf;
     height: 30px;
     padding: 10px;
     text-align: center;
@@ -361,8 +371,9 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -375,8 +386,9 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -402,7 +414,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-item {
-    background-color: var(--color-5);
+    background-color: #0e406b;
     width: 45vh;
     /* min-height: 7.7vh; */
     /* height: 7.7vh; */
@@ -413,11 +425,11 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-item:hover {
-    background-color: var(--color-3);
+    background-color: #1b5588;
 }
 
 .bulletin-item-title {
-    color: white;
+    color: #ffffff;
     margin-left: 5px;
     font-size: 20px;
     text-align: left;
@@ -429,11 +441,11 @@ span.bulletin-item-title {
 }
 
 span.bulletin-item-title[contenteditable]:empty::before {
-    content: 'Enter Title';
+    content: 'Title';
 }
 
 .bulletin-item-info {
-    color: #cccccc;
+    color: #ffffff;
     font-size: 15px;
     margin-left: 5px;
     margin-top: 10px;
@@ -448,14 +460,14 @@ span.bulletin-item-info {
 }
 
 span.bulletin-item-info[contenteditable]:empty::before {
-    content: 'Enter Bulletin Information';
+    content: 'Information';
 }
 
 .bulletin-bottom-info {
     display: flex;
     margin-left: 5px;
     margin-bottom: 0px;
-    color: white;
+    color: #ffffff;
     font-size: 12px;
     height: 100%;
 }
@@ -473,8 +485,9 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .dispatch-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -485,8 +498,9 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .dispatch-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -501,8 +515,9 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .active-unit-title {
-    background-color: var(--color-3);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -539,8 +554,9 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .calls-title {
-    background-color: var(--color-3);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -594,7 +610,8 @@ span.bulletin-item-info[contenteditable]:empty::before {
     padding-right: 10px;
     padding-left: 10px;
     /* height: 3vh; */
-    background-color: var(--color-5);
+    background-color: #0e406b;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -609,7 +626,6 @@ span.bulletin-item-info[contenteditable]:empty::before {
     transition: opacity 0.2s ease;
     opacity: 0;
     pointer-events: none;
-
     padding: 10px;
     height: 3vh;
     background-color: var(--color-5);
@@ -623,7 +639,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
     width: fit-content;
     padding: 5px;
     padding-left: 15px;
-    padding-right: 15px;  
+    padding-right: 15px;
     color: white;
     font-size: 12px;
     font-weight: bolder;
@@ -646,7 +662,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
     width: fit-content;
     padding: 5px;
     padding-left: 15px;
-    padding-right: 15px;    
+    padding-right: 15px;
     color: white;
     font-size: 12px;
     font-weight: bolder;
@@ -677,9 +693,9 @@ span.bulletin-item-info[contenteditable]:empty::before {
     margin: auto;
     margin-left: 10px;
     margin-right: 0px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bolder;
-    color: white;
+    color: #ffffff;
 }
 
 .unit-radio {
@@ -688,7 +704,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
     font-size: 12px;
     font-weight: bolder;
     color: white;
-    background-color: var(--color-3);
+    background-color: #1a6aaf;
     padding: 5px;
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -708,7 +724,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 
 .active-calls-item {
     height: fit-content;
-    background-color: var(--color-5);
+    background-color: #0e406b;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -737,8 +753,8 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .call-number {
-    background-color: #950909;
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 15px;
     font-weight: bolder;
     padding: 2.5px;
@@ -813,8 +829,8 @@ span.bulletin-item-info[contenteditable]:empty::before {
     margin-top: 5px;
     margin-bottom: 0px;
     margin-left: 0.3vh;
-    overflow:wrap;
-    white-space:normal;
+    overflow: wrap;
+    white-space: normal;
 }
 
 .dispatch-line {
@@ -825,7 +841,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
     margin-bottom: 0.1vh
 }
 
-.call-bottom-info > .far {
+.call-bottom-info>.far {
     margin-right: .1vh;
 }
 
@@ -847,8 +863,9 @@ a {
 }
 
 .profile-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -857,11 +874,10 @@ a {
     margin-left: 10px;
 }
 
-
-
 .profile-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -876,11 +892,11 @@ a {
 }
 
 .profile-title:hover {
-    background-color: var(--color-3);
+    background-color: #c7c7c7;
 }
 
 .profile-search-input {
-    background-color: var(--color-3);
+    background-color: #0a2e4d;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -920,7 +936,8 @@ a {
 }
 
 .profile-item {
-    background-color: var(--color-5);
+    background-color: #0e406b;
+    border-radius: 10px;
     width: 100%;
     height: 9vh;
     margin: auto;
@@ -928,11 +945,10 @@ a {
     margin-top: 0px;
     display: flex;
     user-select: none;
-
 }
 
 .profile-item:hover {
-    background-color: var(--color-3);
+    background-color: #082238;
 }
 
 .profile-image {
@@ -985,8 +1001,9 @@ a {
 }
 
 .manage-profile-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -996,8 +1013,9 @@ a {
 }
 
 .manage-profile-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -1012,8 +1030,8 @@ a {
 }
 
 .manage-profile-editing-title {
-    background-color: var(--color-3);
-    color: white;
+    background-color: #0e406b;
+    color: #ffffff;
     font-size: 15px;
     font-weight: lighter;
     padding-top: 10px;
@@ -1035,19 +1053,20 @@ a {
     font-weight: lighter;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #1b8f25;
+    background-color: #ffffff;
+    border-radius: 10px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
     display: block;
 }
 
 .manage-profile-save:hover {
-    background-color: #1caa28;
+    background-color: #dfdfdf;
 }
 
 .manage-profile-info-container {
@@ -1094,7 +1113,7 @@ a {
 }
 
 .line {
-    background-color: var(--color-3);
+    background-color: #082f52;
     height: 2px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -1178,7 +1197,7 @@ a {
     outline: none;
     height: 100%;
     resize: none;
-    background-color: var(--color-5);
+    background-color: #0d385e;
     color: white;
     font-size: 16px;
     padding: 10px;
@@ -1193,7 +1212,7 @@ a {
     outline: none;
     height: 8%;
     resize: none;
-    background-color: var(--color-5);
+    background-color: #0d385e;
     color: white;
     font-size: 16px;
     padding: 10px;
@@ -1211,15 +1230,17 @@ a {
 }
 
 .manage-profile-licenses-container {
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 10px;
     height: 15%;
 }
 
 .license-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -1261,9 +1282,10 @@ a {
 .manage-profile-tags-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 10px;
     margin-top: 10px;
     min-height: 100px;
     max-height: 200px;
@@ -1271,8 +1293,9 @@ a {
 }
 
 .tags-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -1288,8 +1311,9 @@ a {
 }
 
 .tags-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 25px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -1303,7 +1327,7 @@ a {
 }
 
 .tags-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #bebebe;
 }
 
 .tags-holder {
@@ -1325,16 +1349,16 @@ a {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
 }
 
 span.tag-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .tag-input {
@@ -1348,10 +1372,10 @@ span.tag-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -1361,17 +1385,19 @@ span.tag-input[contenteditable]:empty::before {
 .manage-profile-vehs-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 10px;
     margin-top: 10px;
     max-height: 150px;
     overflow: scroll;
 }
 
 .vehs-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -1404,29 +1430,31 @@ span.tag-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
 }
 
 .manage-profile-houses-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 10px;
     margin-top: 10px;
     max-height: 150px;
     overflow: scroll;
 }
 
 .houses-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
+    border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -1457,28 +1485,30 @@ span.tag-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: bolder;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
 }
 
 .manage-profile-gallery-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 10px;
     margin-top: 10px;
     height: 18vh;
     overflow: scroll;
 }
 
 .gallery-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 10px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1493,10 +1523,11 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
+    border-radius: 25px;
     padding-top: 7px;
     padding-bottom: 7px;
     margin: auto;
@@ -1508,7 +1539,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #cccccc;
 }
 
 .gallery-inner-container {
@@ -1529,18 +1560,20 @@ span.tag-input[contenteditable]:empty::before {
 .manage-convictions-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 10px;
     margin-top: 10px;
     max-height: 200px;
     overflow: scroll;
 }
 
 .convictions-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1551,7 +1584,6 @@ span.tag-input[contenteditable]:empty::before {
     width: 95%;
     align-items: center;
     user-select: none;
-    
 }
 
 .convictions-holder {
@@ -1569,9 +1601,9 @@ span.tag-input[contenteditable]:empty::before {
     z-index: 1;
     width: 120px;
     height: 120px;
-    border: 12px solid var(--color-1);
+    border: 12px solid #1a6aaf;
     border-radius: 50%;
-    border-top: 12px solid var(--color-3);
+    border-top: 12px solid #082e50;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -1583,21 +1615,29 @@ span.tag-input[contenteditable]:empty::before {
     z-index: 1;
     width: 120px;
     height: 120px;
-    border: 12px solid var(--color-4);
+    border: 12px solid #081f33;
     border-radius: 50%;
-    border-top: 12px solid var(--color-3);
+    border-top: 12px solid #082e50;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .gallery-image-enlarged {
@@ -1609,6 +1649,7 @@ span.tag-input[contenteditable]:empty::before {
     z-index: 999;
 }
 
+
 /* Context Menu */
 
 .contextmenu {
@@ -1616,11 +1657,11 @@ span.tag-input[contenteditable]:empty::before {
     width: fit-content;
     padding: 2px;
     margin: 0;
-    border: 1px solid var(--color-3);
-    background: var(--color-5);
+    border: 1px solid #0d385e;
+    background: #0d385e;
     z-index: 100;
-    border-radius: 3px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.479);
     opacity: 0;
     transform: translate(0, 15px) scale(.95);
     transition: transform 0.1s ease-out, opacity 0.1s ease-out;
@@ -1635,7 +1676,7 @@ span.tag-input[contenteditable]:empty::before {
     white-space: nowrap;
 }
 
-.contextmenu-btn { 
+.contextmenu-btn {
     display: block;
     color: white;
     font-size: 13px;
@@ -1678,7 +1719,7 @@ span.tag-input[contenteditable]:empty::before {
     top: 50%;
     transform: translateY(-50%);
     border: 5px solid transparent;
-    border-left-color: #808080; 
+    border-left-color: #808080;
 }
 
 .contextmenu-item-submenu:hover::after {
@@ -1686,38 +1727,38 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .contextmenu-show,
-.contextmenu-item:hover > .contextmenu {
+.contextmenu-item:hover>.contextmenu {
     opacity: 1;
     transform: translate(0, 0) scale(1);
     pointer-events: auto;
 }
 
-.contextmenu-item:hover > .contextmenu {
+.contextmenu-item:hover>.contextmenu {
     transition-delay: 300ms;
 }
 
 .revoke-licence:hover {
-    background-color: #950909;
+    background-color: #1a4a74
 }
 
 .give-licence:hover {
-    background-color: #099517;
+    background-color: #1a4a74
 }
 
 .remove-image:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .expand-image:hover {
-    background-color: #099517;
+    background-color: #1a4a74;
 }
 
 .copy-image-link:hover {
-    background-color: #099517;
+    background-color: #1a4a74;
 }
 
 .gallery-upload-input {
-    background-color: var(--color-3);
+    background-color: #0d385e;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1765,8 +1806,9 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -1776,8 +1818,8 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -1796,7 +1838,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-search-input {
-    background-color: var(--color-3);
+    background-color: #0d385e;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1836,7 +1878,8 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-item {
-    background-color: var(--color-5);
+    background-color: #0d385e;
+    border-radius: 15px;
     width: 100%;
     height: 5.5vh;
     margin: auto;
@@ -1907,8 +1950,9 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -1920,9 +1964,10 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1938,7 +1983,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-title:hover {
-    background-color: var(--color-3);
+    background-color: #d4d4d4;
 }
 
 .manage-incidents-create {
@@ -1948,13 +1993,14 @@ span.tag-input[contenteditable]:empty::before {
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
-    background-color: var(--color-4);
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     /* margin-right: 0px; */
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
     display: block;
@@ -1970,12 +2016,13 @@ span.tag-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #1b8f25;
+    border-radius: 15px;
+    background-color: #ffffff;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
     display: block;
@@ -2005,7 +2052,7 @@ span.tag-input[contenteditable]:empty::before {
     margin-bottom: 0px;
     align-items: center;
     display: flex;
-    border-bottom: 2px solid var(--color-3);
+    border-bottom: 2px solid #0d385e;
 }
 
 .manage-incidents-title-input input {
@@ -2028,7 +2075,7 @@ span.tag-input[contenteditable]:empty::before {
     outline: none;
     min-height: 30vh;
     resize: none;
-    background-color: var(--color-5);
+    background-color: #0d385e;
     color: white;
     font-size: 16px;
     padding: 10px;
@@ -2038,7 +2085,8 @@ span.tag-input[contenteditable]:empty::before {
 .manage-incidents-tags-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
+    border: 2px solid #ffffff00;
+    border-radius: 15px;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2052,8 +2100,9 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tags-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -2069,13 +2118,14 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tags-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #dfdfdf;
 }
 
 .manage-incidents-tags-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 7.25px;
     padding-bottom: 7.25px;
@@ -2110,10 +2160,10 @@ span.tag-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: #ffffff;
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
 }
@@ -2121,8 +2171,8 @@ span.tag-input[contenteditable]:empty::before {
 .manage-incidents-officers-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
-    color: white;
+    border: 2px solid #1a69af00;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
     margin: auto;
@@ -2135,9 +2185,10 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -2152,9 +2203,10 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 7.25px;
     padding-bottom: 7.25px;
@@ -2169,7 +2221,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #e2e2e2;
 }
 
 .manage-incidents-officers-holder {
@@ -2193,10 +2245,10 @@ span.tag-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
 }
@@ -2204,7 +2256,7 @@ span.tag-input[contenteditable]:empty::before {
 .manage-incidents-civilians-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
+    border: 2px solid #0d385e00;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2218,8 +2270,9 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-civilians-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -2235,9 +2288,10 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-civilians-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 7.25px;
     padding-bottom: 7.25px;
@@ -2276,10 +2330,10 @@ span.tag-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
 }
@@ -2287,7 +2341,7 @@ span.tag-input[contenteditable]:empty::before {
 .manage-incidents-evidence-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
+    border: 2px solid #0d385e00;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2301,10 +2355,11 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
+    border-radius: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -2318,9 +2373,10 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 7.25px;
     padding-bottom: 7.25px;
@@ -2354,7 +2410,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 span.tag-incident-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .tag-incident-input {
@@ -2368,10 +2424,10 @@ span.tag-incident-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -2393,10 +2449,10 @@ span.officers-incident-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -2404,7 +2460,7 @@ span.officers-incident-input[contenteditable]:empty::before {
 }
 
 span.civilians-incident-input[contenteditable]:empty::before {
-    content: 'Civilian Name';
+    content: 'Medborgare Name';
 }
 
 .civilians-incident-input {
@@ -2418,10 +2474,10 @@ span.civilians-incident-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -2429,8 +2485,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -2441,10 +2498,11 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
+    border-radius: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -2457,13 +2515,13 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-title:hover {
-    background-color: var(--color-3);
+    background-color: rgb(212, 212, 212);
 }
 
 .associated-incidents-tags-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
+    border: 2px solid #1a69af00;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2477,9 +2535,10 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-tags-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -2498,8 +2557,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-tags-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7.25px;
@@ -2535,16 +2595,16 @@ span.civilians-incident-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
 }
 
 .incidents-upload-input {
-    background-color: var(--color-3);
+    background-color: #0d385e;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -2579,8 +2639,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .bulletin-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -2594,13 +2655,13 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .bulletin-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #e0e0e0;
 }
 
 .associated-incidents-user-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
+    border: 2px solid #0d385e00;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2614,7 +2675,7 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-user-title {
-    background-color: var(--color-4);
+    background-color: #0d385e;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2639,7 +2700,7 @@ span.civilians-incident-input[contenteditable]:empty::before {
     max-height: 14vh;
     user-select: none;
     display: flex;
-    background-color: var(--color-5);
+    background-color: #0d385e;
 }
 
 .associated-incidents-user-tag {
@@ -2651,10 +2712,10 @@ span.civilians-incident-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: white;
+    color: #0d385e;
     font-size: 12px;
     font-weight: 600;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     user-select: none;
     width: fit-content;
 }
@@ -2681,10 +2742,10 @@ span.civilians-incident-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
 }
@@ -2744,7 +2805,8 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .icidents-person-search-container {
-    background-color: var(--color-5);
+    background-color: #1a6aaf;
+    border-radius: 15px;
     width: 95vh;
     height: 45vh;
     margin: auto;
@@ -2755,8 +2817,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .icidents-person-search-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
@@ -2880,8 +2943,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -2891,10 +2955,11 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
+    border-radius: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -2963,8 +3028,8 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -2976,8 +3041,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -2995,8 +3061,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-title-tag {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -3012,10 +3079,8 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-title:hover {
-    background-color: var(--color-3);
+    background-color: #dbdbdb;
 }
-
-
 
 .manage-bolos-create {
     width: 13.7%;
@@ -3024,19 +3089,20 @@ span.civilians-incident-input[contenteditable]:empty::before {
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
-    background-color: var(--color-4);
+    background-color: #ffffff;
     margin: auto;
+    border-radius: 15px;
     margin-left: 5px;
     margin-top: 10px;
     /* margin-right: 0px; */
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
 
 .manage-bolos-create:hover {
-    background-color: var(--color-3);
+    background-color: #dfdfdf;
 }
 
 .manage-bolos-input-tag {
@@ -3148,19 +3214,20 @@ span.civilians-incident-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: #1b8f25;
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 0px;
     margin-top: 10px;
     margin-right: 13px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
 
 .manage-bolos-save:hover {
-    background-color: #1caa28;
+    background-color: #e2e2e2;
 }
 
 .manage-bolos-new {
@@ -3169,18 +3236,19 @@ span.civilians-incident-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: #8f1b1b;
+    border-radius: 15px;
+    background-color: #ffffff;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
 
 .manage-bolos-new:hover {
-    background-color: #aa1c1c;
+    background-color: #e2e2e2;
 }
 
 .manage-bolos-reports-content {
@@ -3211,9 +3279,10 @@ span.civilians-incident-input[contenteditable]:empty::before {
 .manage-bolos-tags-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 15px;
     max-height: 150px;
     overflow: scroll;
 }
@@ -3221,9 +3290,10 @@ span.civilians-incident-input[contenteditable]:empty::before {
 .manage-bolos-gallery-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 15px;
     margin-top: 10px;
     height: 18vh;
     overflow: scroll;
@@ -3246,8 +3316,9 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .officers-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -3261,15 +3332,16 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .officers-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #dfdfdf;
 }
 
 .manage-officers-tags-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 15px;
     max-height: 150px;
     margin-top: 10px;
     overflow: scroll;
@@ -3347,24 +3419,26 @@ span.civilians-incident-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: var(--color-10);
+    background-color: #f3f3f3;
+    border-radius: 15px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
 
 .bolos-search-refresh:hover {
-    background-color: #aa891c;
+    background-color: #dbdbdb;
 }
 
 .bolos-search-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 0px;
@@ -3380,13 +3454,14 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-search-title:hover {
-    background-color: var(--color-3);
+    background-color: #e0e0e0;
 }
 
 .manage-bolos-tags-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -3399,11 +3474,11 @@ span.civilians-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-tags-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #e0e0e0;
 }
 
 span.tag-bolo-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .tag-bolo-input {
@@ -3417,10 +3492,10 @@ span.tag-bolo-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0e406b;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -3428,7 +3503,7 @@ span.tag-bolo-input[contenteditable]:empty::before {
 }
 
 span.officer-tag-bolo-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .officer-tag-bolo-input {
@@ -3442,10 +3517,10 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0e406b;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -3453,8 +3528,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .bolo-gallery-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -3468,7 +3544,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .bolo-gallery-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #e9e9e9;
 }
 
 .bolo-gallery-upload-input {
@@ -3517,7 +3593,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-editing-title {
-    background-color: var(--color-3);
+    background-color: #0e406b;
     color: white;
     font-size: 15px;
     font-weight: lighter;
@@ -3535,8 +3611,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -3554,8 +3631,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-comms-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 45.5%;
@@ -3565,7 +3643,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-title {
-    background-color: var(--color-4);
+    background-color: #1a6aaf;
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -3653,7 +3731,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-item-info {
-    float:left;
+    float: left;
     font-size: 14px;
     font-weight: bold;
     padding-left: 0.75vh;
@@ -3737,13 +3815,13 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-item-message {
-    float:left;
+    float: left;
     font-size: 14px;
     font-weight: lighter;
     color: white;
     width: 100%;
-    overflow:wrap;
-    white-space:normal;
+    overflow: wrap;
+    white-space: normal;
     padding-left: 0.80vh;
     padding-top: 0.2vh;
 }
@@ -3758,7 +3836,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-item-grid {
-    display:grid;
+    display: grid;
 }
 
 .dispatch-input {
@@ -3769,12 +3847,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     margin-bottom: 1vh;
     border: none;
     padding: 12px 20px;
-    background-color: var(--color-7);
+    background-color: #1a4a74;
     color: #bebec2;
 }
 
 .dispatch-input:focus {
-    outline:none!important;
+    outline: none!important;
 }
 
 .reports-search-refresh {
@@ -3783,18 +3861,19 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: var(--color-10);
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
 
 .reports-search-refresh:hover {
-    background-color: #aa891c;
+    background-color: #dfdfdf;
 }
 
 .dispatch-comms-refresh {
@@ -3803,23 +3882,25 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: var(--color-10);
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
 
 .dispatch-comms-refresh:hover {
-    background-color: #aa891c;
+    background-color: #dfdfdf;
 }
 
 .reports-search-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -3836,12 +3917,13 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-search-title:hover {
-    background-color: var(--color-3);
+    background-color: #d4d4d4;
 }
 
 .manage-reports-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -3853,8 +3935,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -3872,8 +3955,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-title-tag {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -3889,10 +3973,8 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-title:hover {
-    background-color: var(--color-3);
+    background-color: #dddddd;
 }
-
-
 
 .manage-reports-create {
     width: 13.7%;
@@ -4025,20 +4107,21 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: #1b8f25;
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 0px;
     margin-top: 10px;
     margin-right: 13px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
     display: block;
 }
 
 .manage-reports-save:hover {
-    background-color: #1caa28;
+    background-color: rgb(218, 218, 218);
 }
 
 .manage-reports-new {
@@ -4047,40 +4130,42 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: #8f1b1b;
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
     display: block;
 }
 
 .manage-reports-new:hover {
-    background-color: #aa1c1c;
+    background-color: #dbdbdb;
 }
 
 .incidents-remove-normal-tag:hover {
-    background-color: #aa1c1c;
+    background-color: #1a4a74;
 }
 
 .incidents-remove-normal-civ:hover {
-    background-color: #aa1c1c;
+    background-color: #1a4a74;
 }
 
 .incidents-remove-tag:hover {
-    background-color: #aa1c1c;
+    background-color: #1a4a74;
 }
 
 .incidents-remove-officer-tag:hover {
-    background-color: #aa1c1c;
+    background-color: #1a4a74;
 }
 
 .manage-reports-editing-title {
-    background-color: var(--color-3);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 15px;
     font-weight: lighter;
     padding-top: 10px;
@@ -4106,7 +4191,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     outline: none;
     height: 100%;
     resize: none;
-    background-color: var(--color-5);
+    background-color: #0d385e;
     color: white;
     font-size: 16px;
     padding: 10px;
@@ -4125,9 +4210,10 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 .manage-reports-tags-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 15px;
     max-height: 150px;
     overflow: scroll;
 }
@@ -4135,9 +4221,10 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 .manage-reports-gallery-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
+    border-radius: 15px;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
     margin-top: 10px;
     height: 18vh;
     overflow: scroll;
@@ -4160,8 +4247,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-officers-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -4175,23 +4263,25 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-officers-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #d4d4d4;
 }
 
 .reports-officers-tags-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
+    border-radius: 15px;
     max-height: 150px;
     margin-top: 10px;
     overflow: scroll;
 }
 
 .reports-gallery-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -4205,7 +4295,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-gallery-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #dbdbdb;
 }
 
 .reports-gallery-upload-input {
@@ -4254,8 +4344,9 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-tags-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -4269,23 +4360,25 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-tags-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #dfdfdf;
 }
 
 .reports-civilians-tags-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1);
+    background-color: #1a6aaf;
+    border-radius: 15px;
     width: 100%;
-    border: 2px solid var(--color-3);
+    border: 4px solid #c59506;
     max-height: 150px;
     margin-top: 10px;
     overflow: scroll;
 }
 
 .reports-civilians-add-btn {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 7px;
@@ -4299,7 +4392,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-civilians-add-btn:hover {
-    background-color: var(--color-3);
+    background-color: #d4d4d4;
 }
 
 .reports-civilians-tags-holder {
@@ -4311,9 +4404,10 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-item {
-    background-color: var(--color-5);
+    background-color: #0d385e;
     width: 100%;
     margin: auto;
+    border-radius: 15px;
     margin-bottom: 10px;
     margin-top: 0px;
     display: flex;
@@ -4322,7 +4416,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-item:hover {
-    background-color: var(--color-3);
+    background-color: #1d507c;
 }
 
 .reports-top-holder {
@@ -4381,7 +4475,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 span.tag-reports-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .tag-reports-input {
@@ -4395,10 +4489,10 @@ span.tag-reports-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -4406,7 +4500,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 span.officer-tag-reports-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .officer-tag-reports-input {
@@ -4420,10 +4514,10 @@ span.officer-tag-reports-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -4431,7 +4525,7 @@ span.officer-tag-reports-input[contenteditable]:empty::before {
 }
 
 span.civilian-tag-reports-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    content: 'Ange tag';
 }
 
 .civilian-tag-reports-input {
@@ -4445,10 +4539,10 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0d385e;
     user-select: none;
     width: fit-content;
     outline: none;
@@ -4456,8 +4550,9 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -4487,11 +4582,12 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-search-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
+    border-radius: 15px;
     padding-bottom: 5px;
     text-align: center;
     margin: auto;
@@ -4503,11 +4599,11 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-search-title:hover {
-    background-color: var(--color-3);
+    background-color: #e0e0e0;
 }
 
 .dmv-search-input {
-    background-color: var(--color-3);
+    background-color: #0d385e;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -4547,8 +4643,9 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-information-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -4564,29 +4661,31 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: #1b8f25;
+    background-color: #ffffff;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    border-radius: 15px;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
     display: block;
 }
 
 .vehicle-information-save:hover {
-    background-color: #1caa28;
+    background-color: #ffffff;
 }
 
 .add-charge:hover {
-    background-color: #1caa28;
+    background-color: #1a4a74;
 }
 
 .vehicle-information-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
     font-size: 18px;
+    border-radius: 15px;
     font-weight: bolder;
     padding-top: 5px;
     padding-bottom: 0px;
@@ -4602,7 +4701,8 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-item {
-    background-color: var(--color-5);
+    background-color: #0d385e;
+    border-radius: 15px;
     width: 100%;
     height: 9vh;
     margin: auto;
@@ -4610,11 +4710,10 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     margin-top: 0px;
     display: flex;
     user-select: none;
-
 }
 
 .dmv-item:hover {
-    background-color: var(--color-3);
+    background-color: #234d72;
 }
 
 .dmv-image {
@@ -4788,7 +4887,7 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 .vehicle-info-tags-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-3);
+    border: 2px solid rgba(23, 23, 23, 0);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -4922,11 +5021,12 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     overflow: auto;
 }
 
-.stafflogs-container > p {
+.stafflogs-container>p {
     color: white;
     font-size: 1.3vh;
     padding-left: 1vh;
 }
+
 
 /* Vehicle Colors :( so long lol */
 
@@ -4945,7 +5045,9 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     color: white;
 }
 
-.bluesilver-color { background-color: #c4d4e0; }
+.bluesilver-color {
+    background-color: #c4d4e0;
+}
 
 .matteblack-color {
     background-color: #141414;
@@ -4957,114 +5059,301 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     color: white;
 }
 
-.lightgray-color { background-color: #D3D3D3; }
-.utilgunmetal-color { background-color: #39434d; }
-.red-color { background-color: #c00e1a; }
-.torinored-color { background-color: #da1918; }
-.formulared-color { background-color: #b6111b; }
-.blazered-color { background-color: #a51e23; }
-.gracefulred-color { background-color: #7b1a22; }
-.garnetred-color { background-color: #8e1b1f; }
-.desertred-color { background-color: #6f1818; }
-.cabernetred-color { background-color: #49111d; }
-.candyred-color { background-color: #b60f25; }
-.orange-color { background-color: #f78616; }
-.gold-color { background-color: #c2944f; }
-.mattedarkred-color { background-color: #732021; }
-.matteyellow-color { background-color: #ffc91f; color: black }
-.brightred-color { background-color: #de0f18; }
-.darkgreen-color { background-color: #132428; }
-.racingreen-color { background-color: #122e2b; }
-.seagreen-color { background-color: #12383c; }
-.olivegreen-color { background-color: #31423f; }
-.green-color { background-color: #155c2d; }
-.gasolinebluegreen-color { background-color: #1b6770; }
-.mattelimegreen-color { background-color: #66b81f; }
-.seawash-color { background-color: #65867f; }
-.midnightblue-color { background-color: #222e46; }
-.darkblue-color { background-color: #233155; }
-.saxonyblue-color { background-color: #304c7e; }
-.blue-color { background-color: #345df3; }
-.diamondblue-color { background-color: #d6e7f1; }
-.brightblue-color { background-color: #0b9cf1; }
-.purpleblue-color { background-color: #2f2d52; }
-.ultrablue-color { background-color: #2354a1; }
-.lightningblue-color { background-color: #2446a8; }
-.mattedarkblue-color { background-color: #1f2852; }
-.matteblue-color { background-color: #253aa7; }
-.yellow-color { background-color: #fbe212; color: black }
-.bronze-color { background-color: #916532; }
-.lime-color { background-color: #98d223; }
-.champagne-color { background-color: #9b8c78; }
-.beige-color { background-color: #F5F5DC; }
-.darkivory-color { background-color: #473f2b; }
-.brown-color { background-color: #3a2a1b; }
-.lightbrown-color { background-color: #b5a079; }
-.beechwood-color { background-color: #a4965f; }
-.chocoorange-color { background-color: #752b19; }
-.cream-color { background-color: #f7edd5; }
-.white-color { background-color: #f0f0f0; color: black }
-.steel-color { background-color: #6a747c; }
-.blacksteel-color { background-color: #354158; }
-.aluminium-color { background-color: #9ba0a8; }
-.chrome-color { background-color: #5870a1; }
-.wornwhite-color { background-color: #eae6de; color: black }
-.offwhite-color { background-color: #dfddd0; color: black }
-.lightorange-color { background-color: #f9a458; }
-.pink-color { background-color: #f21f99; }
-.blackblue-color { background-color: #0a0c17; }
-.blackpurple-color { background-color: #0c0d18; }
-.blackred-color { background-color: #0e0d14; }
-.darkpurple-color { background-color: #621276; }
-.olivedrab-color { background-color: #696748; }
-.tan-color { background-color: #c3b492; }
+.lightgray-color {
+    background-color: #D3D3D3;
+}
+
+.utilgunmetal-color {
+    background-color: #39434d;
+}
+
+.red-color {
+    background-color: #c00e1a;
+}
+
+.torinored-color {
+    background-color: #da1918;
+}
+
+.formulared-color {
+    background-color: #b6111b;
+}
+
+.blazered-color {
+    background-color: #a51e23;
+}
+
+.gracefulred-color {
+    background-color: #7b1a22;
+}
+
+.garnetred-color {
+    background-color: #8e1b1f;
+}
+
+.desertred-color {
+    background-color: #6f1818;
+}
+
+.cabernetred-color {
+    background-color: #49111d;
+}
+
+.candyred-color {
+    background-color: #b60f25;
+}
+
+.orange-color {
+    background-color: #f78616;
+}
+
+.gold-color {
+    background-color: #c2944f;
+}
+
+.mattedarkred-color {
+    background-color: #732021;
+}
+
+.matteyellow-color {
+    background-color: #ffc91f;
+    color: black
+}
+
+.brightred-color {
+    background-color: #de0f18;
+}
+
+.darkgreen-color {
+    background-color: #132428;
+}
+
+.racingreen-color {
+    background-color: #122e2b;
+}
+
+.seagreen-color {
+    background-color: #12383c;
+}
+
+.olivegreen-color {
+    background-color: #31423f;
+}
+
+.green-color {
+    background-color: #155c2d;
+}
+
+.gasolinebluegreen-color {
+    background-color: #1b6770;
+}
+
+.mattelimegreen-color {
+    background-color: #66b81f;
+}
+
+.seawash-color {
+    background-color: #65867f;
+}
+
+.midnightblue-color {
+    background-color: #222e46;
+}
+
+.darkblue-color {
+    background-color: #233155;
+}
+
+.saxonyblue-color {
+    background-color: #304c7e;
+}
+
+.blue-color {
+    background-color: #345df3;
+}
+
+.diamondblue-color {
+    background-color: #d6e7f1;
+}
+
+.brightblue-color {
+    background-color: #0b9cf1;
+}
+
+.purpleblue-color {
+    background-color: #2f2d52;
+}
+
+.ultrablue-color {
+    background-color: #2354a1;
+}
+
+.lightningblue-color {
+    background-color: #2446a8;
+}
+
+.mattedarkblue-color {
+    background-color: #1f2852;
+}
+
+.matteblue-color {
+    background-color: #253aa7;
+}
+
+.yellow-color {
+    background-color: #fbe212;
+    color: black
+}
+
+.bronze-color {
+    background-color: #916532;
+}
+
+.lime-color {
+    background-color: #98d223;
+}
+
+.champagne-color {
+    background-color: #9b8c78;
+}
+
+.beige-color {
+    background-color: #F5F5DC;
+}
+
+.darkivory-color {
+    background-color: #473f2b;
+}
+
+.brown-color {
+    background-color: #3a2a1b;
+}
+
+.lightbrown-color {
+    background-color: #b5a079;
+}
+
+.beechwood-color {
+    background-color: #a4965f;
+}
+
+.chocoorange-color {
+    background-color: #752b19;
+}
+
+.cream-color {
+    background-color: #f7edd5;
+}
+
+.white-color {
+    background-color: #f0f0f0;
+    color: black
+}
+
+.steel-color {
+    background-color: #6a747c;
+}
+
+.blacksteel-color {
+    background-color: #354158;
+}
+
+.aluminium-color {
+    background-color: #9ba0a8;
+}
+
+.chrome-color {
+    background-color: #5870a1;
+}
+
+.wornwhite-color {
+    background-color: #eae6de;
+    color: black
+}
+
+.offwhite-color {
+    background-color: #dfddd0;
+    color: black
+}
+
+.lightorange-color {
+    background-color: #f9a458;
+}
+
+.pink-color {
+    background-color: #f21f99;
+}
+
+.blackblue-color {
+    background-color: #0a0c17;
+}
+
+.blackpurple-color {
+    background-color: #0c0d18;
+}
+
+.blackred-color {
+    background-color: #0e0d14;
+}
+
+.darkpurple-color {
+    background-color: #621276;
+}
+
+.olivedrab-color {
+    background-color: #696748;
+}
+
+.tan-color {
+    background-color: #c3b492;
+}
 
 .reports-remove-image:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .bolo-remove-image:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .bolo-delete:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .remove-bulletin:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .search-vehicle:hover {
-    background-color: #956E09;
+    background-color: #1a4a74;
 }
 
 .mark-code-5:hover {
-    background-color: #0B9509;
+    background-color: #1a4a74;
 }
 
 .remove-code-5:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .mark-stolen:hover {
-    background-color: #0B9509;
+    background-color: #1a4a74;
 }
 
 .remove-stolen:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .toggle-duty:hover {
-    background-color: #956E09;
+    background-color: #1a4a74;
 }
 
 .set-callsign:hover {
-    background-color: #0B9509;
+    background-color: #1a4a74;
 }
 
 .set-radio:hover {
-    background-color: #09956b;
+    background-color: #1a4a74;
 }
 
 .incidents-ghost-holder {
@@ -5133,7 +5422,7 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-editing-title {
-    background-color: var(--color-3);
+    background-color: #0e406b;
     color: white;
     font-size: 15px;
     font-weight: lighter;
@@ -5149,7 +5438,6 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     align-items: center;
     user-select: none;
 }
-
 
 .current-charges-container {
     width: 95%;
@@ -5322,14 +5610,14 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-inner-container {
-    background-color: var(--color-5);
+    background-color: #0e406b;
     width: 30vh;
     height: 17.5vh;
     margin: auto;
     display: flex;
     flex-direction: column;
     z-index: 9999;
-    border: .45vh solid white;
+    border: 4px solid #c59506;
 }
 
 .radio-title {
@@ -5498,7 +5786,7 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     user-select: none;
     width: fit-content;
     background-color: white;
-    color: black;   
+    color: black;
 }
 
 .orange-penis-code {
@@ -5525,24 +5813,24 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     background-color: #ce7808;
 }
 
-.call-bottom-info > span {
+.call-bottom-info>span {
     padding-right: 0.5vh;
 }
 
 .call-attach:hover {
-    background-color: #1caa28;
+    background-color: #1a4a74;
 }
 
 .Set-Waypoint:hover {
-    background-color: #f18f1e;
+    background-color: #1a4a74;
 }
 
 .call-detach:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .remove-blip:hover {
-    background-color: #950909;
+    background-color: #1a4a74;
 }
 
 .dispatch-attached-units {
@@ -5621,8 +5909,9 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-title {
-    background-color: var(--color-4);
-    color: white;
+    background-color: #ffffff;
+    color: #1a6aaf;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
     padding-top: 5px;
@@ -5639,7 +5928,7 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-title:hover {
-    background-color: var(--color-3);
+    background-color: #e6e6e6;
 }
 
 .incidents-search-refresh {
@@ -5648,12 +5937,13 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     font-weight: lighter;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: var(--color-10);
+    background-color: #ffffff;
+    border-radius: 15px;
     margin: auto;
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: white;
+    color: #1a6aaf;
     text-align: center;
     user-select: none;
 }
@@ -5755,42 +6045,37 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 .impound-form {
     display: flex;
     flex-direction: column;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 750px;
     height: 375px;
     background: var(--color-5);
     border: 1px solid white;
 }
 
-.impound-form > form {
+.impound-form>form {
     position: absolute;
-    left: 10%;  
+    left: 10%;
     width: 73%;
-    height: 100%; 
+    height: 100%;
 }
 
-.impound-form > form > input { 
+.impound-form>form>input {
     border: none;
     outline: none;
     font-size: 24px;
     color: white;
-
     background: transparent;
     border: 1px solid rgb(168, 168, 168);
-
     width: 100%;
     height: 13.5%;
-
     margin-top: 20px;
     padding-left: 10%;
 }
 
-.impound-form > form > i {
+.impound-form>form>i {
     position: absolute;
     color: white;
     font-size: 24px;
@@ -5857,14 +6142,15 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 .dispatch-reply:hover {
     background-color: var(--color-1);
 }
-.display_hidden{
+
+.display_hidden {
     display: none;
 }
 
 .cams-page-container {
-    background-color: var(--color-9);
+    background-color: #ffffff;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     width: 96.5%;
     height: 96.5%;
     left: 2.0%;
@@ -5874,8 +6160,9 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
+    background-color: #1a6aaf;
+    border: 4px solid #c59506;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 74.7vh;
@@ -5887,19 +6174,18 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-item {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     gap: 15px 15px;
     overflow: auto;
     margin-bottom: 10px;
-
-
 }
 
 .cams-items {
-    background-color: var(--color-5);
-    height: auto; 
+    background-color: #0e406b;
+    height: auto;
+    border-radius: 15px;
     padding: 10px;
     text-align: center;
     margin: 10px;
@@ -5907,16 +6193,15 @@ span.civilian-tag-reports-input[contenteditable]:empty::before {
     font-size: 20px;
     color: white;
     overflow: visible;
-
 }
 
 .cams-image {
-    height:125px; 
+    height: 125px;
     width: auto;
     margin: 10px;
-
 }
 
 .cams-items:hover {
     background-color: var(--color-3);
 }
+

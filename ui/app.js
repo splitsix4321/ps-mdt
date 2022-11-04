@@ -38,16 +38,16 @@ const DojJobs = {
 }
 
 const MONTH_NAMES = [
-  "January",
-  "February",
-  "March",
+  "Januari",
+  "Februari",
+  "Mars",
   "April",
-  "May",
-  "June",
-  "July",
-  "August",
+  "Maj",
+  "Juni",
+  "Juli",
+  "Augusti",
   "September",
-  "October",
+  "Oktober",
   "November",
   "December",
 ];
@@ -64,20 +64,20 @@ function getFormattedDate(date, prefomattedDate = false, hideYear = false) {
   }
 
   if (prefomattedDate) {
-    return `${prefomattedDate} at ${hours}:${minutes}`;
+    return `${prefomattedDate}  ${hours}:${minutes}`;
   }
 
   if (hideYear) {
-    return `${day}. ${month} at ${hours}:${minutes}`;
+    return `${day}. ${month}  ${hours}:${minutes}`;
   }
 
-  return `${day}. ${month} ${year}. at ${hours}:${minutes}`;
+  return `${day}. ${month} ${year}.  ${hours}:${minutes}`;
 }
 
 var quotes = [
-  'Project Sloth On Top!',
-  'A Discord rewrite fixes everything.',
-  'Does anyone even read these?',
+  'Livet är inte ett problem som bör lösas utan en verklighet som bör upplevas.',
+  'Var glad för detta ögonblick. Det här ögonblicket är ditt liv.',
+  'Livet är för djupt för ord så försök inte beskriva det, lev bara.',
 ]
 
 function randomizeQuote() {
@@ -101,17 +101,17 @@ function timeAgo(dateParam) {
   const isThisYear = today.getFullYear() === date.getFullYear();
 
   if (seconds < 5) {
-    return "Just Now";
+    return "Just nu";
   } else if (seconds < 60) {
-    return `${seconds} Seconds ago`;
+    return `${seconds} Sekunder sedan`;
   } else if (seconds < 90) {
-    return "About a minute ago";
+    return "Nästan en minute sendan";
   } else if (minutes < 60) {
-    return `${minutes} Minutes ago`;
+    return `${minutes} Minuter sedan`;
   } else if (isToday) {
-    return getFormattedDate(date, "Today");
+    return getFormattedDate(date, "Idag");
   } else if (isYesterday) {
-    return getFormattedDate(date, "Yesterday");
+    return getFormattedDate(date, "Igår");
   } else if (isThisYear) {
     return getFormattedDate(date, false, true);
   }
@@ -177,7 +177,7 @@ $(document).ready(() => {
         .addClass("fa-plus");
     }
 
-    $(".manage-profile-editing-title").html(`You are currently editing ${result["firstname"]} ${result["lastname"]}`);
+    $(".manage-profile-editing-title").html(`Du hanterar just nu ${result["firstname"]} ${result["lastname"]}`);
     $(".manage-profile-citizenid-input").val(result['cid']);
     $(".manage-profile-name-input-1").val(result["firstname"]);
     $(".manage-profile-name-input-2").val(result["lastname"]);
@@ -198,12 +198,12 @@ $(document).ready(() => {
     $(".gallery-inner-container").empty();
     $(".convictions-holder").empty();
 
-    let licencesHTML = '<div style="color: #fff; text-align:center;">No Licenses</div>';
-    let tagsHTML = '<div style="color: #fff; text-align:center;">No Tags</div>';
-    let convHTML = '<div style="color: #fff; text-align:center;">Clean Record ?</div>';
-    let vehHTML = '<div style="color: #fff; text-align:center;">No Vehicles</div>';
-    let galleryHTML = '<div style="color: #fff; text-align:center;">No Photos</div>';
-    let propertyHTML = '<div style="color: #fff; text-align:center;">No Properties</div>';
+    let licencesHTML = '<div style="color: #fff; text-align:center;">Inga Licenser</div>';
+    let tagsHTML = '<div style="color: #fff; text-align:center;">Inga taggar</div>';
+    let convHTML = '<div style="color: #fff; text-align:center;">Förekommer ej i belastningsregistret</div>';
+    let vehHTML = '<div style="color: #fff; text-align:center;">Inga Registerade Fordon</div>';
+    let galleryHTML = '<div style="color: #fff; text-align:center;">Inga foton</div>';
+    let propertyHTML = '<div style="color: #fff; text-align:center;">Ingen Address</div>';
 
     // convert key value pair object of licenses to array
     let licenses = Object.entries(result.licences);
@@ -286,7 +286,7 @@ $(document).ready(() => {
                 <span contenteditable="true" class="bulletin-item-title"></span>
                 <span contenteditable="true" class="bulletin-item-info"></span>
                 <div class="bulletin-bottom-info">
-                <div class="bulletin-date">${MyName} - Just Now</div>
+                <div class="bulletin-date">${MyName} - Just nu</div>
                 </div>
             </div>`);
     } else {
@@ -339,7 +339,7 @@ $(document).ready(() => {
         {
           className: "remove-bulletin",
           icon: "fas fa-times",
-          text: "Remove Item",
+          text: "Ta bort",
           info: $(this).data("id"),
           status: $(this).data("title"),
         },
@@ -605,7 +605,7 @@ $(document).ready(() => {
           associated.push({
             Cid: $(this).data("id"),
             Warrant: warrant,
-            Guilty: guilty,
+            Guilty: Skylldig,
             Processed: processed,
             Isassociated: isassociated,
             Charges: charges,
@@ -678,7 +678,7 @@ $(document).ready(() => {
       $(".manage-incidents-title-holder").empty();
       $(".manage-incidents-title-holder").prepend(
         `
-            <div class="manage-incidents-title">Manage Incident</div>
+            <div class="manage-incidents-title">Hantera Händelser</div>
             <div class="manage-incidents-create"> <span class="fas fa-plus" style="margin-top: 3.5px;"></span></div>
             <div class="manage-incidents-save"><span class="fas fa-save" style="margin-top: 3.5px;"></span></div>
             `
@@ -690,7 +690,7 @@ $(document).ready(() => {
       $(".associated-incidents-tags-holder").html("");
 
       $(".manage-incidents-editing-title").html(
-        "You are currently creating a new Incident"
+        "Du skappar en ny händelse"
       );
       $(".manage-incidents-editing-title").data("id", 0);
 
@@ -767,7 +767,7 @@ $(document).ready(() => {
       {
         className: "search-vehicle",
         icon: "fas fa-car",
-        text: "Search Vehicle",
+        text: "Fordonsupplysning",
         info: $(this).data("plate"),
         status: "",
       },
@@ -877,7 +877,7 @@ $(document).ready(() => {
         {
           className: "revoke-licence",
           icon: "fas fa-times",
-          text: "Revoke License",
+          text: "Dra in licens",
           info: info,
           status: status,
         },
@@ -887,7 +887,7 @@ $(document).ready(() => {
         {
           className: "give-licence",
           icon: "fas fa-check",
-          text: "Give License",
+          text: "Ge Licens",
           info: info,
           status: status,
         },
@@ -1337,7 +1337,7 @@ $(document).ready(() => {
     function () {
       let existing = !(
         $(".manage-bolos-editing-title").html() ==
-        "You are currently creating a new BOLO"
+        "Du håller på med en ny Efterlyssning"
       );
       let id = $(".manage-bolos-editing-title").data("id");
       let title = $("#bolotitle").val();
@@ -1635,7 +1635,7 @@ $(document).ready(() => {
         {
           className: "add-charge",
           icon: "fas fa-check",
-          text: "Modify Charges",
+          text: "Hantera åtalspunkter",
           info: $(this).data("name"),
           status: "",
         },
@@ -1894,7 +1894,7 @@ $(document).ready(() => {
         {
           className: "associated-incidents-remove-tag",
           icon: "fas fa-times",
-          text: "Remove Tag",
+          text: "Ta bort tag",
           info: $(this).html(),
           status: $(this).data("id"),
         },
@@ -1925,16 +1925,16 @@ $(document).ready(() => {
                 <div class="associated-incidents-user-tags-holder">
                     <div class="associated-incidents-user-tag red-tag" data-id="${$(
           this
-        ).data("cid")}">Warrant</div>
+        ).data("cid")}">Efterlysst</div>
                     <div class="associated-incidents-user-tag red-tag" data-id="${$(
           this
-        ).data("cid")}">Guilty</div>
+        ).data("cid")}">Skyldig</div>
                     <div class="associated-incidents-user-tag red-tag" data-id="${$(
           this
-        ).data("cid")}">Processed</div>
+        ).data("cid")}">Behandlas</div>
                     <div class="associated-incidents-user-tag red-tag" data-id="${$(
           this
-        ).data("cid")}">Associated</div>
+        ).data("cid")}">Associerad</div>
                 </div>
                 <div class="associated-incidents-user-holder" data-name="${$(
           this
@@ -1942,7 +1942,7 @@ $(document).ready(() => {
                 </div>
                 <div class="manage-incidents-title-tag" data-id="${$(this).data(
           "cid"
-        )}">Recommended Fine</div>
+        )}">Rekommenderade böter</div>
                 <div class="associated-incidents-fine-input" data-id="${$(
           this
         ).data(
@@ -1952,7 +1952,7 @@ $(document).ready(() => {
         ).data("cid")}" type="number"></div>
                 <div class="manage-incidents-title-tag" data-id="${$(this).data(
           "cid"
-        )}">Recommended Sentence</div>
+        )}">Rekommenderad Fängelsetid</div>
                 <div class="associated-incidents-sentence-input" data-id="${$(
           this
         ).data(
@@ -1962,7 +1962,7 @@ $(document).ready(() => {
         ).data("cid")}" type="number"></div>
                 <div class="manage-incidents-title-tag" data-id="${$(this).data(
           "cid"
-        )}">Fine</div>
+        )}">Böter</div>
                 <div class="associated-incidents-fine-input" data-id="${$(
           this
         ).data(
@@ -1972,7 +1972,7 @@ $(document).ready(() => {
         ).data("cid")}" type="number"></div>
                 <div class="manage-incidents-title-tag" data-id="${$(this).data(
           "cid"
-        )}">Sentence</div>
+        )}">Fängelse</div>
                 <div class="associated-incidents-sentence-input" data-id="${$(
           this
         ).data(
@@ -1995,7 +1995,7 @@ $(document).ready(() => {
       {
         className: "incidents-remove-tag",
         icon: "fas fa-times",
-        text: "Remove Tag",
+        text: "Ta bort tag",
         info: $(this).html(),
         status: "",
       },
@@ -2017,7 +2017,7 @@ $(document).ready(() => {
         {
           className: "incidents-remove-officer-tag",
           icon: "fas fa-times",
-          text: "Remove Tag",
+          text: "Ta bort tag",
           info: $(this).html(),
           status: "",
         },
@@ -2040,7 +2040,7 @@ $(document).ready(() => {
         {
           className: "incidents-remove-civ-tag",
           icon: "fas fa-times",
-          text: "Remove Tag",
+          text: "Ta bort tag",
           info: $(this).html(),
           status: "",
         },
@@ -2083,7 +2083,7 @@ $(document).ready(() => {
       {
         className: "incidents-remove-normal-tag",
         icon: "fas fa-times",
-        text: "Remove Tag",
+        text: "Ta bort tag",
         info: $(this).html(),
         status: "",
       },
@@ -2390,7 +2390,7 @@ $(document).ready(() => {
           "Submitted to ICU?: [Yes/No]\n\nIncident Report:\n[ Brief summary of what happened and who did what while on scene. Note anything that stood out about the scene as well as what was done to treat the patient ]\n\n\nList of Injuries:\n- [ State what injury or injuries occurred ]\n\n\n💉 Surgical Report:\n[ Full report on what was done in surgery, list any complications or anything that was found while in operation. Note who was attending and what they did during the surgery. At the end of the report be sure to note the state of the patient after ]\n\n\nAttending:\n- [ List Any Attending Here ]\n\n\nMedications Applied:\n- [ List Any Attending Here ]\n\n\nNotes:\n[ Additional Notes Here ]";
       }
       $(".manage-reports-editing-title").html(
-        "You are currently creating a new report"
+        "Du skappar nu en ny rapport"
       );
       $(".manage-reports-input-title").val("");
       $(".manage-reports-input-type").val("");
@@ -2459,7 +2459,7 @@ $(document).ready(() => {
     function () {
       let existing = !(
         $(".manage-reports-editing-title").html() ==
-        "You are currently creating a new report"
+        "Du skappar nu en ny rapport"
       );
       let id = $(".manage-reports-editing-title").data("id");
       let title = $("#reporttitle").val();
@@ -2604,9 +2604,8 @@ $(document).ready(() => {
                                     <div class="dmv-tags">
                                         <div class="dmv-tag ${paint}-color">${value.colorName}</div>
                                         <div class="dmv-tag ${impound}">Impound</div>
-                                        <div class="dmv-tag ${bolo}">BOLO</div>
-                                        <div class="dmv-tag ${stolen}">Stolen</div>
-                                        <div class="dmv-tag ${codefive}">Code 5</div>
+                                        <div class="dmv-tag ${stolen}">Stulen</div>
+                                        <div class="dmv-tag ${codefive}">Efterlyst</div>
                                     </div>
                                 </div>
                                 <div class="dmv-bottom-info">
@@ -2731,7 +2730,7 @@ $(document).ready(() => {
           {
             className: "mark-code-5",
             icon: "fas fa-check",
-            text: "Mark as Code 5",
+            text: "Markera som efterlyst",
             info: plate,
             status: "",
           },
@@ -2741,7 +2740,7 @@ $(document).ready(() => {
           {
             className: "remove-code-5",
             icon: "fas fa-times",
-            text: "Remove Code 5 Status",
+            text: "Avmarkera som efterlyst",
             info: plate,
             status: "",
           },
@@ -2775,7 +2774,7 @@ $(document).ready(() => {
           {
             className: "mark-stolen",
             icon: "fas fa-check",
-            text: "Mark as Stolen",
+            text: "Markera som stulen",
             info: plate,
             status: "",
           },
@@ -2785,7 +2784,7 @@ $(document).ready(() => {
           {
             className: "remove-stolen",
             icon: "fas fa-times",
-            text: "Remove Code 5 Status",
+            text: "Avmarkera som Sulen",
             info: plate,
             status: "",
           },
@@ -2933,7 +2932,7 @@ $(document).ready(() => {
           {
             className: "impound-vehicle",
             icon: "fas fa-check",
-            text: "State Impound",
+            text: "Beslagta",
             info: plate,
             status: "",
           },
@@ -2943,14 +2942,14 @@ $(document).ready(() => {
           {
             className: "remove-impound",
             icon: "fas fa-times",
-            text: "Unimpound Vehicle",
+            text: "Ge tillbaka",
             info: plate,
             status: "",
           },
           {
             className: "status-impound",
             icon: "fas fa-info-circle",
-            text: "View Impound Status",
+            text: "Visa Beslagtagnings info",
             info: plate,
             status: "",
           },
@@ -3017,14 +3016,14 @@ $(document).ready(() => {
       {
         className: "view-profile",
         icon: "far fa-eye",
-        text: "View Profile",
+        text: "Person information",
         info: $(this).data("cid"),
         status: "",
       },
       {
         className: "view-incident",
         icon: "fas fa-search",
-        text: "View Incident",
+        text: "Visa Händelse",
         info: $(this).data("id"),
         status: "",
       },
@@ -3097,31 +3096,31 @@ $(document).ready(() => {
     let cid = $(this).data("id");
     if (cid) {
       args = [
-        {
-          className: "toggle-duty",
-          icon: "fas fa-thumbtack",
-          text: "Toggle Duty",
-          info: cid,
-          status: "",
-        },
+        // {
+        //   className: "toggle-duty",
+        //   icon: "fas fa-thumbtack",
+        //   text: "Toggle Duty",
+        //   info: cid,
+        //   status: "",
+        // },
         {
           className: "set-callsign",
           icon: "far fa-id-badge",
-          text: "Set Callsign",
+          text: "Sätt Rakel",
           info: cid,
           status: "",
         },
         {
           className: "set-radio",
           icon: "fas fa-broadcast-tower",
-          text: "Set Radio",
+          text: "Ange Radio",
           info: cid,
           status: "",
         },
         {
           className: "set-waypoint",
           icon: "fas fa-map-marker-alt",
-          text: "Set Waypoint",
+          text: "Sätt GPS",
           info: cid,
           status: "",
         },
@@ -3231,35 +3230,35 @@ $(document).ready(() => {
             {
               className: "attached-units",
               icon: "fas fa-link",
-              text: "Attached Units",
+              text: "Anslutna Enheter",
               info: callId,
               status: "",
             },
             {
               className: "call-detach",
               icon: "fas fa-sign-out-alt",
-              text: "Detach",
+              text: "Utgå",
               info: callId,
               status: "",
             },
             {
               className: "call-attach",
               icon: "fas fa-sign-in-alt",
-              text: "Respond",
+              text: "Anslut",
               info: callId,
               status: "",
             },
             {
               className: "Set-Waypoint",
               icon: "fas fa-map-marker-alt",
-              text: "Set Waypoint",
+              text: "Sätt GPS",
               info: callId,
               status: "",
             },
             {
               className: "remove-blip",
               icon: "fa-solid fa-circle-minus",
-              text: "Remove Blip",
+              text: "Ta bort GPS",
               info: callId,
               status: "",
             },
@@ -3269,35 +3268,35 @@ $(document).ready(() => {
             {
               className: "attached-units",
               icon: "fas fa-link",
-              text: "Attached Units",
+              text: "Anslutna Enheter",
               info: callId,
               status: "",
             },
             {
               className: "call-detach",
               icon: "fas fa-sign-out-alt",
-              text: "Detach",
+              text: "Utgå",
               info: callId,
               status: "",
             },
             {
               className: "call-attach",
               icon: "fas fa-sign-in-alt",
-              text: "Respond",
+              text: "Anslut",
               info: callId,
               status: "",
             },
             {
               className: "Set-Waypoint",
               icon: "fas fa-map-marker-alt",
-              text: "Set Waypoint",
+              text: "Sätt GPS",
               info: callId,
               status: "",
             },
             {
               className: "remove-blip",
               icon: "fa-solid fa-circle-minus",
-              text: "Remove Blip",
+              text: "Ta bort GPS",
               info: callId,
               status: "",
             },
@@ -3342,7 +3341,7 @@ $(document).ready(() => {
           {
             className: "set-waypoint",
             icon: "fas fa-map-marker-alt",
-            text: "Set Waypoint",
+            text: "Sätt GPS",
             info: cid,
             status: "",
           },
@@ -3378,7 +3377,7 @@ $(document).ready(() => {
         {
           className: "dispatch-reply",
           icon: "fas fa-reply",
-          text: "Reply",
+          text: "Svara",
           info: mySubString,
           status: "",
         },
@@ -3584,29 +3583,29 @@ $(document).ready(() => {
           "#8f741b"
         );
         $(".badge-logo").attr("src", "img/sasp_badge.png");
-        $(".header-title").html("SAN ANDREAS STATE POLICE");
-        $(".bolo-nav-item").html("BOLOs");
-        $(".bolos-search-title").html("Bolos");
-        $("#bolos-search-input").attr("placeholder", "Search Bolo...");
-        $(".manage-bolos-title").html("Manage Bolo");
+        $(".header-title").html("Polismyndigheten");
+        $(".bolo-nav-item").html("Efterlyssningar");
+        $(".bolos-search-title").html("Efterlyssningar");
+        $("#bolos-search-input").attr("placeholder", "Sök efter Efterlyssningar...");
+        $(".manage-bolos-title").html("Hantera Efterlyssningar");
         $(".manage-bolos-editing-title").html(
-          "You are currently creating a new BOLO"
+          "Du skappar en ny Efterlyssning"
         );
-        $(".boloplate-title").html("Plate");
-        $(".boloowner-title").html("Owner");
-        $(".boloindividual-title").html("Individual");
-        $("#boloplate").attr("placeholder", "Place plate here...");
+        $(".boloplate-title").html("Regplåt");
+        $(".boloowner-title").html("Ägare");
+        $(".boloindividual-title").html("Indevid");
+        $("#boloplate").attr("placeholder", "Skriv regplåt här...");
         $("#bolodetail").attr(
           "placeholder",
-          "Bolo detail goes here..."
+          "Efterlyssnings informations..."
         );
         $("#boloowner").attr(
           "placeholder",
-          "Place vehicle owner here..."
+          "Ägare..."
         );
         $("#boloindividual").attr(
           "placeholder",
-          "Place invidivual here..."
+          "Beskrivning..."
         );
         $("#home-warrants-container").fadeIn(0);
         $("#home-reports-container").fadeOut(0);
@@ -3615,12 +3614,12 @@ $(document).ready(() => {
         $(".bolo-nav-item").show();
         $(".dmv-nav-item").show();
         $(".cams-nav-item").show();
-        $(".dispatch-title-ofsomesort").html("Dispatch");
+        $(".dispatch-title-ofsomesort").html("RLC");
         $(".dispatch-comms-container").fadeIn(0);
         $(".manage-profile-name-input-1").attr("readonly", true);
         $(".manage-profile-name-input-2").attr("readonly", true);
         $("#reports-officers-involved-tag-title").html(
-          "Officers Involved"
+          "Inblandade Kolegor"
         );
         $(".roster-iframe").attr("src", rosterLink);
 
@@ -3895,7 +3894,7 @@ $(document).ready(() => {
         let activeInfoJob = `<div class="unit-job active-info-job-unk">UNKNOWN</div>`;
         if (PoliceJobs[unit.unitType] !== undefined) {
           policeCount++;
-          activeInfoJob = `<div class="unit-job active-info-job-lspd">LSPD</div>`;
+          activeInfoJob = `<div class="unit-job active-info-job-lspd">Polis</div>`;
         } else if (AmbulanceJobs[unit.unitType] !== undefined) {
           activeInfoJob = `<div class="unit-job active-info-job-ambulance">Ambulance</div>`
           emsCount++;
@@ -4296,7 +4295,7 @@ $(document).ready(() => {
           `<div class="incidents-item" data-id="${value.id}">
                     <div class="incidents-top-holder">
                         <div class="incidents-item-title">${value.title}</div>
-                        <div class="incedent-report-name">Incident Report</div>
+                        <div class="incedent-report-name">HändelseRapport</div>
                     </div>
                     <div class="incidents-bottom-holder">
                         <div class="incedent-report-id">ID: ${value.id}</div>
@@ -4342,7 +4341,7 @@ $(document).ready(() => {
       $(".associated-incidents-tags-holder").html("");
 
       $(".manage-incidents-editing-title").html(
-        "You are currently editing incident " + table["id"]
+        "Du Hanterar just nu Händelse-rapport: " + table["id"]
       );
       $(".manage-incidents-editing-title").data(
         "id",
@@ -4406,7 +4405,7 @@ $(document).ready(() => {
       if (PoliceJobs[playerJob] !== undefined || AmbulanceJobs[playerJob] !== undefined) {
         $(".manage-incidents-title-holder").prepend(
           `
-            <div class="manage-incidents-title">Manage Incident</div>
+            <div class="manage-incidents-title">Hantera Händelser</div>
             <div class="manage-incidents-create"> <span class="fas fa-plus" style="margin-top: 3.5px;"></span></div>
             <div class="manage-incidents-save"><span class="fas fa-save" style="margin-top: 3.5px;"></span></div>
             `
@@ -4416,7 +4415,7 @@ $(document).ready(() => {
       } else if (DojJobs[playerJob] !== undefined) {
         $(".manage-incidents-title-holder").prepend(
           `
-            <div class="manage-incidents-title">Manage Incident</div>
+            <div class="manage-incidents-title">Hantera Händelser</div>
             `
         );
         $(".manage-incidents-title").css("width", "95%");
@@ -4453,20 +4452,20 @@ $(document).ready(() => {
             `<div class="associated-incidents-user-container" data-id="${value.cid}">
                             <div class="associated-incidents-user-title">${value.name} (#${value.cid})</div>
                             <div class="associated-incidents-user-tags-holder">
-                                <div class="associated-incidents-user-tag ${warrantTag}" data-id="${value.cid}">Warrant</div>
-                                <div class="associated-incidents-user-tag ${guiltyTag}" data-id="${value.cid}">Guilty</div>
-                                <div class="associated-incidents-user-tag ${processedTag}" data-id="${value.cid}">Processed</div>
-                                <div class="associated-incidents-user-tag ${associatedTag}" data-id="${value.cid}">Associated</div>
+                                <div class="associated-incidents-user-tag ${warrantTag}" data-id="${value.cid}">Efterlysst</div>
+                                <div class="associated-incidents-user-tag ${guiltyTag}" data-id="${value.cid}">Skyldig</div>
+                                <div class="associated-incidents-user-tag ${processedTag}" data-id="${value.cid}">Behandlas</div>
+                                <div class="associated-incidents-user-tag ${associatedTag}" data-id="${value.cid}">Associerad</div>
                             </div>
                             <div class="associated-incidents-user-holder" data-name="${value.cid}" style="display:none;">
                             </div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Recommended Fine</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Rekommenderade böter</div>
                             <div class="associated-incidents-fine-input" data-id="${value.cid}" style="display:none;"><img src="https://i.imgur.com/h7S5f9J.png"> <input placeholder="0" disabled class="fine-recommended-amount" id="fine-recommended-amount" data-id="${value.cid}" type="number"></div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Recommended Sentence</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Rekommenderad Fängelsetraff</div>
                             <div class="associated-incidents-sentence-input" data-id="${value.cid}" style="display:none;"><img src="https://i.imgur.com/9Xn6xXK.png"> <input placeholder="0" disabled class="sentence-recommended-amount" id="sentence-recommended-amount" data-id="${value.cid}" type="number"></div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Fine</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Böter</div>
                             <div class="associated-incidents-fine-input" data-id="${value.cid}" style="display:none;"><img src="https://i.imgur.com/h7S5f9J.png"> <input placeholder="Enter fine here..." value="0" class="fine-amount" data-id="${value.cid}" type="number"></div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Sentence</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}" style="display:none;">Fängelse</div>
                             <div class="associated-incidents-sentence-input" data-id="${value.cid}" style="display:none;"><img src="https://i.imgur.com/9Xn6xXK.png"> <input placeholder="Enter months here..." value="0" class="sentence-amount" data-id="${value.cid}" type="number"></div>
                         </div>`
           );
@@ -4475,20 +4474,20 @@ $(document).ready(() => {
             `<div class="associated-incidents-user-container" data-id="${value.cid}">
                             <div class="associated-incidents-user-title">${value.name} (#${value.cid})</div>
                             <div class="associated-incidents-user-tags-holder">
-                                <div class="associated-incidents-user-tag ${warrantTag}" data-id="${value.cid}">Warrant</div>
-                                <div class="associated-incidents-user-tag ${guiltyTag}" data-id="${value.cid}">Guilty</div>
-                                <div class="associated-incidents-user-tag ${processedTag}" data-id="${value.cid}">Processed</div>
-                                <div class="associated-incidents-user-tag ${associatedTag}" data-id="${value.cid}">Associated</div>
+                                <div class="associated-incidents-user-tag ${warrantTag}" data-id="${value.cid}">Efterlysst</div>
+                                <div class="associated-incidents-user-tag ${guiltyTag}" data-id="${value.cid}">Skyldig</div>
+                                <div class="associated-incidents-user-tag ${processedTag}" data-id="${value.cid}">Behandlas</div>
+                                <div class="associated-incidents-user-tag ${associatedTag}" data-id="${value.cid}">Associerad</div>
                             </div>
                             <div class="associated-incidents-user-holder" data-name="${value.cid}">
                             </div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Recommended Fine</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Rekommenderade böter</div>
                             <div class="associated-incidents-fine-input" data-id="${value.cid}"><img src="https://i.imgur.com/h7S5f9J.png"> <input placeholder="0" disabled class="fine-recommended-amount" id="fine-recommended-amount" data-id="${value.cid}" type="number"></div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Recommended Sentence</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Rekommenderad Fängelsetraff</div>
                             <div class="associated-incidents-sentence-input" data-id="${value.cid}"><img src="https://i.imgur.com/9Xn6xXK.png"> <input placeholder="0" disabled class="sentence-recommended-amount" id="sentence-recommended-amount" data-id="${value.cid}" type="number"></div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Fine</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Böter</div>
                             <div class="associated-incidents-fine-input" data-id="${value.cid}"><img src="https://i.imgur.com/h7S5f9J.png"> <input placeholder="Enter fine here..." value="0" class="fine-amount" data-id="${value.cid}" type="number"></div>
-                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Sentence</div>
+                            <div class="manage-incidents-title-tag" data-id="${value.cid}">Fängelse</div>
                             <div class="associated-incidents-sentence-input" data-id="${value.cid}"><img src="https://i.imgur.com/9Xn6xXK.png"> <input placeholder="Enter months here..." value="0" class="sentence-amount" data-id="${value.cid}" type="number"></div>
                         </div>`
           );
@@ -4639,7 +4638,7 @@ $(document).ready(() => {
         }, 1500);
       }
       $(".manage-reports-editing-title").html(
-        "You are currently editing report " + id
+        "Du hanterar just nu rapport:" + id
       );
       $(".manage-reports-editing-title").data("id", Number(id));
     } else if (eventData.type == "reports") {
@@ -4666,7 +4665,7 @@ $(document).ready(() => {
       let table = eventData.data;
 
       $(".manage-reports-editing-title").html(
-        "You are currently editing report " + table["id"]
+        "Du hanterar just nu rapport:" + table["id"]
       );
 
       $(".manage-reports-editing-title").data("id", Number(table["id"]));
@@ -4743,16 +4742,16 @@ $(document).ready(() => {
       }
 
       $(".vehicle-tags").append(
-        `<div class="vehicle-tag ${impound} impound-tag">Impound</div>`
+        `<div class="vehicle-tag ${impound} impound-tag">Beslagtagen</div>`
+      );
+      // $(".vehicle-tags").append(
+      //   `<div class="vehicle-tag ${bolo}">BOLO</div>`
+      // );
+      $(".vehicle-tags").append(
+        `<div class="vehicle-tag ${codefive} code5-tag">Efterlyst</div>`
       );
       $(".vehicle-tags").append(
-        `<div class="vehicle-tag ${bolo}">BOLO</div>`
-      );
-      $(".vehicle-tags").append(
-        `<div class="vehicle-tag ${codefive} code5-tag">Code 5</div>`
-      );
-      $(".vehicle-tags").append(
-        `<div class="vehicle-tag ${stolen} stolen-tag">Stolen</div>`
+        `<div class="vehicle-tag ${stolen} stolen-tag">Stulen</div>`
       );
       $(".vehicle-info-imageurl-input").val(table["image"]);
     } else if (eventData.type == "updateVehicleDbId") {
